@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Atllasianlogo from "../assets/Atllasian.png"
 import { DownOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
-import { Dropdown, Space } from 'antd';
+import { Dropdown} from 'antd';
 import MarkChatUnreadOutlinedIcon from '@mui/icons-material/MarkChatUnreadOutlined';
 
 
