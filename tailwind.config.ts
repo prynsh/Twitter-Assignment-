@@ -11,6 +11,10 @@ const config: Config = {
       colors:{
         logobg:'#E7E7E7',
         customorange: '#DC4A2D',
+        customgreen:'#067647',
+        custombg:'#ECFDF3',
+        bordercolor:'#ABEFC6',
+        dotcolour: "#17B26A",
         
       },
       backgroundImage: {

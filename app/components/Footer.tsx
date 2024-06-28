@@ -1,35 +1,46 @@
 import React from 'react';
+import atlas from "../assets/atlas.png";
+import Image from 'next/image';
 
 const CompanyFooter = () => {
   return (
-    <div className="p-6 bg-white border rounded-lg shadow-md mt-6">
-      <div className="flex items-center space-x-4 mb-4">
-        <img src="path/to/company-logo.png" alt="Company Logo" className="w-12 h-12" />
+    <div className="p-5 pt-1 bg-white shadow-md mt-5 pl-28">
+      <div className="flex items-center space-x-2 mb-1">
+        <Image src={atlas} alt="Company Logo" className="w-10 h-8" />
         <div>
-          <h2 className="text-xl font-semibold">Atlassian</h2>
-          <p className="text-sm text-gray-500">Company size: 1k - 2k Employees</p>
+          <h2 className="text-normal ">Atlassian</h2>
         </div>
       </div>
-      <div className="flex flex-wrap space-x-8">
-        <div>
-          <h3 className="text-sm font-medium text-gray-600">Type</h3>
-          <p className="text-sm text-gray-800">Private</p>
+      <div className="flex flex-wrap">
+        <div className="flex w-full  mt-2 mb-4">
+          <div className="w-96">
+            <h3 className="text-sm text-gray-500">Company size</h3>
+            <p className="text-sm text-gray-800 font-semibold">1k - 2k Employees</p>
+          </div>
+          <div className="w-96">
+            <h3 className="text-sm text-gray-500">Type</h3>
+            <p className="text-sm text-gray-800 font-semibold">Private</p>
+          </div>
         </div>
-        <div>
-          <h3 className="text-sm font-medium text-gray-600">Sector</h3>
-          <p className="text-sm text-gray-800">Information Technology, Infrastructure</p>
+        <div className="flex w-full mb-2">
+          <div className="w-96">
+            <h3 className="text-sm text-gray-500">Sector</h3>
+            <p className="text-sm text-gray-800 font-semibold">Information Technology, Infrastructure</p>
+          </div>
+          <div className="w-96">
+            <h3 className="text-sm text-gray-500">Funding</h3>
+            <p className="text-sm text-gray-800 font-semibold">Bootstrapped</p>
+          </div>
         </div>
-        <div>
-          <h3 className="text-sm font-medium text-gray-600">Funding</h3>
-          <p className="text-sm text-gray-800">Bootstrapped</p>
-        </div>
-        <div>
-          <h3 className="text-sm font-medium text-gray-600">Founded In</h3>
-          <p className="text-sm text-gray-800">2019</p>
-        </div>
-        <div>
-          <h3 className="text-sm font-medium text-gray-600">Founded By</h3>
-          <p className="text-sm text-gray-800">Scott Farquhar, Mike Cannon-Brookes</p>
+        <div className="flex w-full">
+          <div className="w-96">
+            <h3 className="text-sm text-gray-500">Founded In</h3>
+            <p className="text-sm text-gray-800 font-semibold">2019</p>
+          </div>
+          <div className="w-96">
+            <h3 className="text-sm text-gray-500">Founded By</h3>
+            <p className="text-sm text-gray-800 font-semibold">Scott Farquhar, Mike Cannon-Brookes</p>
+          </div>
         </div>
       </div>
     </div>
